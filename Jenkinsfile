@@ -9,7 +9,7 @@ pipeline {
                 git url: 'https://github.com/Kashi779/webapp-project.git', branch: 'main'
             }
         }
-        stage('Build') {
+        stage('Maven Build') {
             steps {
                 sh 'mvn clean install'
             }
